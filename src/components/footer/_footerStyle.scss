@@ -1,0 +1,126 @@
+@import "../../sass/misc/env";
+@import "../../sass/misc/mixins";
+
+.footer{
+    padding: 50px 0;
+    position: relative;
+
+    &:before{
+        display: block;
+        content: '';
+        position: absolute;
+        min-height: 11px;
+        width: 100%;
+        background-image: url('../img/bgFilter/hr-footer.png');
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer__logo{
+    max-width: 138px;
+    max-height: 57px;
+    min-width: 138px;
+    min-height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 42px;
+
+    &-img {
+        width: 100%;
+    }
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer__info-row {
+    &--text, a, span, p {
+        font-family: LatoLight, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.6em;
+        margin: 0 5px;
+        white-space: nowrap;
+        color: #373737;
+    }
+
+    .footer__info-row--text:visited {
+        color: #373737;
+    }
+
+    
+}
+
+
+.footer__network {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+
+.footer__network-item-link {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__network-item-link.facebook {
+    background-image: url('../img/icons/facebook.png');
+    margin-right: 15px;
+}
+
+.footer__network-item-link.twitter {
+    background-image: url('../img/icons/twitter.png');
+}
+
+.footer__lang {
+    width: 92px;
+    height: 40px;
+    margin-top: 28px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('../img/bgFilter/lang.png') no-repeat;
+}
+
+.footer__lang-link.active{
+    color: white;
+    background: url('../img/bgFilter/lang-active.png') no-repeat;
+}
+
+.footer__lang-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 30px;
+    padding-top: 3px;
+    font-family: LatoLight, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #373737;
+}

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+  
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+  
+p {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+button,
+input{
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15; 
+  margin: 0;
+  overflow: visible;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[type="search"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+ [type="checkbox"],
+ [type="radio"] {
+   box-sizing: border-box; /* 1 */
+   padding: 0; /* 2 */
+ }
+ 
+ /**
+  * Correct the cursor style of increment and decrement buttons in Chrome.
+  */
+ 
+ [type="number"]::-webkit-inner-spin-button,
+ [type="number"]::-webkit-outer-spin-button {
+   height: auto;
+ }
+ 
+ /**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: none;
+}
+
+ /**
+  * 1. Correct the odd appearance in Chrome and Safari.
+  * 2. Correct the outline style in Safari.
+  */
+ 
+ [type="search"] {
+   -webkit-appearance: textfield; /* 1 */
+   outline-offset: -2px; /* 2 */
+ }
+ 
+ /**
+  * Remove the inner padding in Chrome and Safari on macOS.
+  */
+ 
+ [type="search"]::-webkit-search-decoration {
+   -webkit-appearance: none;
+ }
+
+ button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.container{
+  width: 100%;
+  max-width: 936px;
+  margin: 0 auto;
+  position: relative;
+
+
+  @media screen and (max-width: 940px){
+    max-width: inherit;
+    padding-left: 20px;
+    padding-right: 20px;;
+  }
+
+}
+  
+.section__title {
+  font-family: LatoLight, sans-serif;
+  font-size: 42px;
+  color: $semiBlack;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (max-width:940px){
+      font-size: 36px;
+      text-align: center;
+  }
+
+  @media screen and (max-width:767px){
+      font-size: 30px;
+  }
+}
+
+.defaultText {
+  font-family: LatoLight, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width:767px){
+      font-size: 16px;
+  }
+}

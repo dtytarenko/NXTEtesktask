@@ -1,0 +1,41 @@
+@mixin small {
+    @media screen and (max-width: 320px) {
+      @content;
+    }
+  }
+
+  @mixin preSmall {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  }
+  
+  @mixin medium {
+    @media screen and (max-width: 780px) {
+      @content;
+    }
+  }
+  
+  @mixin large {
+    @media screen and (max-width: 1280px) {
+      @content;
+    }
+  }
+  
+  @mixin extraMedium {
+    @media screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+@font-face {
+  font-display: swap;
+  font-family: Helvetica-Bold;
+  src: url('../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.eot');
+  src: url('../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.woff') format('woff'),
+  url('../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.ttf') format('truetype'),
+  url('../fonts/HelveticaWorld-Bold.svg#HelveticaWorld-Bold') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
